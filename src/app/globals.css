@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background1: #ffffff;
+  --background2: #EFEFEF;
+  --background3: #333333;
+  --background4: #212121;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background1: #212121;
+    --background2: #333333;
+    --background3: #EFEFEF;
+    --background4: #ffffff;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--background1);
+  background: var(--background3);
+  font-family: var(--font-montserrat), sans-serif; /* Aqui está a correção */
 }
