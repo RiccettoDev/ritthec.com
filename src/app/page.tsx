@@ -1,13 +1,20 @@
+import Flex from "@/components/atomo/Flex";
+import Footer from "@/components/organism/Footer";
+import Header from "@/components/organism/Header";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)] overflow-x-hidden">
+      <Header />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        hello
+        <Flex className="fle-col h-full">
+          <a href="">bla</a>
+          <h1>bla</h1>
+          <h3>bla</h3>
+          <span>bla</span>
+        </Flex>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        footer
-      </footer>
+      <Footer />
     </div>
   );
 }
