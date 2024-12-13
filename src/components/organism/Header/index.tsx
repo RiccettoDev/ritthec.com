@@ -1,6 +1,7 @@
 import { BsFacebook } from "react-icons/bs";
 import { FaAngleRight, FaSquareXTwitter, FaYoutube } from "react-icons/fa6";
 import { IoLogoLinkedin, IoLogoWhatsapp } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
 import { RiInstagramFill } from "react-icons/ri";
 
 import Image from "next/image";
@@ -19,8 +20,20 @@ export default function Header() {
             }}
         >
 
-            <div className="">
+            <div className="z-10">
                 <Image src={logo} alt="image logo" width={250} />
+            </div>
+            
+            <div className="hidden lg:flex absolute top-[430px] left-10 gap-2 border rounded-lg p-1">
+                <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxxxx</button>
+                <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxx</button>
+                <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxx xxxxx</button>
+                <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxx</button>
+                <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxxxx</button>
+            </div>
+
+            <div className="flex md:hidden absolute top-[480px] left-8">
+                <IoMenu size={50} color="#FFFFFF" />
             </div>
 
             <div className="flex flex-col justify-center items-center -mt-4">
@@ -41,7 +54,7 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className="flex absolute gap-4 right-14 bottom-10">
+                <div className="flex absolute gap-4 right-14 sm:right-14 bottom-5 sm:bottom-10">
 
                     <button className="border rounded-full p-2 hover:scale-110">
                         <BsFacebook size={25} color="#FFFFFF"/>
@@ -64,8 +77,11 @@ export default function Header() {
                     </button>
                 </div>
 
-                <div className="flex gap-2 border rounded-full p-2 hover:scale-110 w-54 text-background3 absolute bottom-10 left-12">
+                <div className="hidden sm:flex gap-2 border rounded-full p-2 hover:scale-105 w-54 text-background3 absolute bottom-10 left-12">
                     <IoLogoWhatsapp size={25} color="#FFFFFF" /> +55 (99) 99999-9999
+                </div>
+                <div className="sm:hidden flex gap-2 border rounded-full p-2 hover:scale-110 w-54 text-background3 absolute bottom-5 left-10">
+                    <IoLogoWhatsapp size={25} color="#FFFFFF" />
                 </div>
 
             </div>
