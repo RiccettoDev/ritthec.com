@@ -11,7 +11,7 @@ import Watermark from "./watermark";
 
 export default function Companies() {
     return (
-        <section className="bg-background3 w-full flex flex-col p-16 relative">
+        <section className="bg-background3 w-full flex flex-col p-16 relative shadow-xl">
             <div className="w-full flex flex-col sm:flex-row z-10">
                 <div className="w-[50%] flex flex-col gap-8 mt-8">
                     <h2 className="font-extrabold">FEATURE CLIENTS</h2>
@@ -50,7 +50,7 @@ export default function Companies() {
                 </button>
             </div>
 
-            <div className="flex flex-col w-full mt-20 gap-10">
+            <div className="flex flex-col w-full mt-20 pb-16 gap-10">
                 <div className="flex w-full gap-6">
                     <CardCompanie img={company} />
                     <CardCompanie img={company} />
