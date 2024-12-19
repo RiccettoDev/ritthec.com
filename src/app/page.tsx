@@ -1,13 +1,15 @@
 import About from "@/components/organism/about";
-import Footer from "@/components/organism/footer";
-import Header from "@/components/organism/header";
+import Companies from "@/components/organism/companies";
+import Footer from "@/components/organism/Footer";
+import Header from "@/components/organism/Header";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)] overflow-x-hidden bg-background1">
+    <div className="">
       <Header />
       <main className="flex flex-col w-full">
         <About />
+        <Companies />
       </main>
       <Footer />
     </div>

@@ -11,7 +11,7 @@ import logo from "../../../../public/logo.png";
 export default function Header() {
     return (
         <header
-            className="bg-background1 w-full h-screen flex flex-col justify-center items-center pt-[18em] relative"
+            className="bg-background1 w-full h-[600px] flex flex-col items-center relative"
             style={{
                 backgroundImage: `url(${bgHeader.src})`,
                 backgroundSize: "cover",
@@ -24,7 +24,7 @@ export default function Header() {
                 <Image src={logo} alt="image logo" width={250} />
             </div>
             
-            <div className="hidden lg:flex absolute top-[430px] left-10 gap-2 border rounded-lg p-1">
+            <div className="hidden lg:flex absolute top-8 left-10 gap-2 border rounded-lg p-1">
                 <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxxxx</button>
                 <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxx</button>
                 <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxx xxxxx</button>
@@ -32,11 +32,11 @@ export default function Header() {
                 <button className="p-1 text-white hover:bg-background3 hover:text-background1 rounded-md">xxxxxxx</button>
             </div>
 
-            <div className="flex md:hidden absolute top-[480px] left-8">
+            <div className="flex md:hidden absolute top-8 left-8">
                 <IoMenu size={50} color="#FFFFFF" />
             </div>
 
-            <div className="flex flex-col justify-center items-center -mt-4">
+            <div className="flex flex-col justify-center items-center mt-6 ">
                 <div className="text-background3 text-5xl font-medium text-center">
                     Build Tour Brand
                 </div>
