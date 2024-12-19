@@ -1,6 +1,6 @@
 import About from "@/components/organism/about";
-import Footer from "@/components/organism/Footer";
-import Header from "@/components/organism/Header";
+import Footer from "@/components/organism/footer";
+import Header from "@/components/organism/header";
 
 export default function Home() {
   return (
