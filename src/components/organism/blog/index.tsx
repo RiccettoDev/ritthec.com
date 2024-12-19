@@ -6,7 +6,7 @@ import imgTest from "../../../img/company.png"
 export default function Blog() {
     return (
         <section className="flex flex-col sm:flex-row w-full bg-background4 p-16 shadow-xl">
-            <div className="flex flex-col w-[30%] gap-8 mt-16">
+            <div className="flex flex-col w-full sm:w-[30%] gap-8 mt-16">
                 <h2 className="font-extrabold">OUR BLOG</h2>
                 <h1 className="text-3xl font-extrabold">Thoughts & Ideas</h1>
                 <button className="flex w-36 border justify-center items-center gap-2 bg-[#FFB101] rounded-full px-4 h-10 text-black hover:bg-black hover:text-white transition-all duration-300">
@@ -30,7 +30,7 @@ export default function Blog() {
                 <div className="w-[80%] h-[5px] bg-black"></div>
             </div>
             
-            <div className="flex flex-col sm:flex-row w-[70%] gap-2 mt-16">
+            <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-[70%] gap-2 mt-16">
                 <CardBlog img={imgTest} text="hjasgvhasg nhasguhjsagu hjgvsahygsahgsahj hjashjgvsa" />
                 <CardBlog img={imgTest} text="hjasgvhasg nhasguhjsagu hjgvsahygsahgsahj hjashjgvsa" />
                 <CardBlog img={imgTest} text="hjasgvhasg nhasguhjsagu hjgvsahygsahgsahj hjashjgvsa" />
