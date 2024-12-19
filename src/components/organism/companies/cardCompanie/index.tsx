@@ -10,7 +10,8 @@ export default function CardCompanie({ img }: CardCompanieProps) {
             flex 
             justify-center 
             items-center 
-            w-[25%] 
+            w-full
+            sm:w-[25%] 
             h-32 
             border 
             border-black 
